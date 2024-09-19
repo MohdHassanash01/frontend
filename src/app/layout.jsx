@@ -1,6 +1,7 @@
 import  { Metadata } from "next";
 import "./globals.css";
 import {Roboto} from "next/font/google"
+import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 
 
 
@@ -15,6 +16,8 @@ export default function RootLayout({ children }) {
   return (
           <html lang="en">
       <body className={font.className}>
+
+        <ResponsiveNav/>
 
 {/* navbar */}
 
