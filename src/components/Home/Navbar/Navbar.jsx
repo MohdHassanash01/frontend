@@ -7,29 +7,30 @@ import { FaHouseDamage, FaUserCircle, FaBars} from "react-icons/fa";
 export const navlinks = [
     {
         id:1,
-        url:"#",
+        url:"/",
         label:"Home"
     },
+   
     {
         id:2,
-        url:"#",
-        label:"Linsting"
-    },
-    {
-        id:3,
-        url:"#",
+        url:"/property",
         label:"Property"
     },
     {
-        id:4,
-        url:"#",
+        id:3,
+        url:"/Blog",
         label:"Blog"
     },
     {
-        id:5,
-        url:"#",
-        label:"Contact"
-    }
+        id:4,
+        url:"/AddProperty",
+        label:"Add Property"
+    },
+    {
+        id:2,
+        url:"/Listing",
+        label:"Team"
+    },
 ]
 
 const Navbar = ({openNav}) => {
@@ -51,7 +52,7 @@ const Navbar = ({openNav}) => {
     // },[])
 
   return (
-    <div className={`fixed  h-[10vh] z-[100] w-full transition-all duration-200 `}>
+    <div className={`fixed  h-[10vh] z-[100] w-full transition-all duration-200 bg-black bg-opacity-60`}>
 
         <div className='flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto'>
 
@@ -82,14 +83,15 @@ const Navbar = ({openNav}) => {
 <div className='flex items-center space-x-4'>
     {/* login Button  */}
 
-    <div className='flex items-center cursor-pointer rounded-full text-white space-x-2 hover:text-red-400 transition-all duration-200'>
+    <div className='flex items-center cursor-pointer rounded-full text-white space-x-2 hover:text-yellow-500 transition-all duration-200'>
         <FaUserCircle className='w-5 h-5'/>
-        <p className='font-bold text-xs sm:text-base'>Login / Register</p>
+        <Link 
+        href="/signup" className='font-bold text-xs sm:text-base'>Login / Register</Link>
     </div>
 
     {/* burger menu  */}
 
-    <FaBars onClick={openNav}  className='sm:w-6 sm:h-6 w-4 h-4 lg:hidden cursor-pointer text-white' />
+    <FaBars onClick={openNav}  className='sm:w-6 sm:h-6 w-4 h-4 lg:hidden cursor-pointer text-white hover:text-yellow-500' />
 
 </div>
 

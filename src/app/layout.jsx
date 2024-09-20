@@ -2,6 +2,7 @@ import  { Metadata } from "next";
 import "./globals.css";
 import {Roboto} from "next/font/google"
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
+import Footer from "@/components/Home/Footer/Footer";
 
 
 
@@ -17,13 +18,13 @@ export default function RootLayout({ children }) {
           <html lang="en">
       <body className={font.className}>
 
-        <ResponsiveNav/>
-
+<ResponsiveNav/>
 {/* navbar */}
 
 {children}
 
   {/* footer       */}
+  <Footer/>
      
       </body>
     </html>

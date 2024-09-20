@@ -19,7 +19,7 @@ const MobileNav = ({showNav,closeNav}) => {
       <div className={`text-white ${navOpen} transform transition-all duration-500 delay-300 fixed flex justify-center flex-col h-full w-[80%] sm:w-[60%] bg-[#c1205e] space-y-6 z-[10000]`}>
       {navlinks.map((navlink) => {
         return ( <Link key={navlink.id} href={navlink.url}>
-            <p className='text-[20px] ml-12 border-b-[1.5px] pb-1 w-fit sm:text-[30px]  font-medium hover:text-yellow-300'>{navlink.label}</p>
+            <p className='text-[16px] ml-12 border-b-[1.5px] pb-1 w-fit sm:text-[30px]  font-medium hover:text-yellow-300'>{navlink.label}</p>
         </Link> )
     })}
 

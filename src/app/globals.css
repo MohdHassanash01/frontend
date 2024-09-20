@@ -2,3 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer components {
+    .footer_heading {
+        @apply text-lg text-white font-bold mb-4
+    }
+
+    .footer_link{
+        @apply text-base text-white hover:text-rose-500
+        hover:underline cursor-pointer text-opacity-60 mb-3  w-fit
+    }
+}
