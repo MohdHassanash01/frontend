@@ -2,13 +2,13 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='  pt-20'> 
-     <section class="bg-gray-50 dark:bg-gray-900 ">
-  <div class=" flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 pt-20 ">
+    <div className='w-full min-h-screen  '> 
+     <section class="bg-slate-800 dark:bg-gray-900 ">
+  <div class=" flex flex-col items-center justify-center px-6 py-10 mx-auto md:h-screen lg:py-0 pt-40 ">
      
-      <div class="w-full bg-white rounded-xl shadow-xl dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700 border-4 border-rose-500 mt-2">
+      <div class="w-full backdrop-blur-md bg-white/20 rounded-xl shadow-xl dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700   mt-2">
           <div class="p-6 space-y-3 md:space-y-6 sm:p-8">
-              <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+              <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-100 md:text-2xl dark:text-white">
                   Create an account
               </h1>
               <form class="space-y-4 md:space-y-4" action="#">
@@ -42,7 +42,7 @@ const page = () => {
                         <label for="terms" class="font-light text-gray-500 dark:text-gray-300">I accept the <a class="font-medium text-primary-600 hover:underline dark:text-primary-500" href="#">Terms and Conditions</a></label>
                       </div>
                   </div>
-                  <button type="submit" class="w-full text-white bg-rose-500 hover:bg-rose-600 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium  text-sm px-5 py-2.5 text-center rounded-[10px]">Create an account</button>
+                  <button type="submit" class="w-full  bg-rose-500 hover:bg-rose-600 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium  text-sm px-5 py-2.5 text-center rounded-[10px] text-gray-50">Create an account</button>
                   <p class="text-sm font-light text-gray-500 dark:text-gray-400">
                       Already have an account? <a href="#" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Login here</a>
                   </p>

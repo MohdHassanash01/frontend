@@ -10,8 +10,11 @@ const AppartmentType = () => {
         <p className='text-sm text-gray-700'>lorem ipsum dolar sit amet</p>
 
 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-10 mb-10 md:mt-20 gap-8 items-center">
-{appartmentTypeData.map((item) => {
-    return <div key={item.id}>
+{appartmentTypeData.map((item,index) => {
+    return <div key={item.id}
+    data-aos="zoom-in"
+    data-aos-delay={`${index*150}`}
+    data-aos-anchor-placement="top-center">
         <AppartmentCard item={item}/>
     </div>
 })}

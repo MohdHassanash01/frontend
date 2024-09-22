@@ -11,8 +11,11 @@ const Blog = () => {
     <p className='text-sm text-gray-700'>lorem ipsum dolar sit amet</p>
 
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-16 gap-6 items-center sm:gap-16">
-        {blogs.map((blog) => {
-            return <div key={blog.id}>
+        {blogs.map((blog,index) => {
+            return <div key={blog.id}
+            data-aos="zoom-out"
+            data-aos-delay={`${index*150}`}
+            data-aos-anchor-placement="top-center">
                 <BlogCard blog={blog}/>
             </div>
         })}

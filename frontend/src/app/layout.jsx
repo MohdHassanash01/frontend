@@ -3,6 +3,7 @@ import "./globals.css";
 import {Roboto} from "next/font/google"
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Home/Footer/Footer";
+import ScrollToTop from "@/components/Helper/ScrollToTop";
 
 
 
@@ -25,6 +26,8 @@ export default function RootLayout({ children }) {
 
   {/* footer       */}
   <Footer/>
+
+  <ScrollToTop/>
      
       </body>
     </html>

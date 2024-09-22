@@ -31,7 +31,7 @@ const ReviewCard = ({review}) => {
 
 <div >
 <h1 className="font-bold text-gray-500">{review.name}</h1>
-<p className="text-sm text-gray-500">{review.profession}</p>
+{/* <p className="text-sm text-gray-500">{review.profession}</p> */}
 </div>
    
     </div>

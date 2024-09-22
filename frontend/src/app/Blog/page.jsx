@@ -68,7 +68,7 @@ const Blog = () => {
     <div className="pt-24 pb-16 bg-gray-200 ">
 
     <div className="w-[80%] mx-auto">
-    <h1 className="text-2xl sm:text-3xl font-bold mb-2 text-gray-800 hover:text-rose-500 hover:underline transition-all ease-in">Check Our Blogs</h1>
+    <h1 className="text-2xl sm:text-3xl font-bold mb-2 text-gray-800  hover:underline transition-all ease-in">Check Our Blogs</h1>
     <p className='text-sm text-gray-700'>lorem ipsum dolar sit amet</p>
 
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-16 gap-6 items-center sm:gap-16">

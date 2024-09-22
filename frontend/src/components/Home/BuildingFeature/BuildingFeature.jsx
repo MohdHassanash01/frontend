@@ -12,8 +12,11 @@ const BuildingFeature = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 items-center mt-14 ml-10 mr-10">
-            {buildings.map((building) => {
-                return <div key={building.id}>
+            {buildings.map((building,index) => {
+                return <div key={building.id}
+                data-aos="zoom-in"
+                data-aos-delay={`${index*150}`}
+                data-aos-anchor-placement="fade-left">
                     <BuildingCard building={building}/>
                 </div>
             })}

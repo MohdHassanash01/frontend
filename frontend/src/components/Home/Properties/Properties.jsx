@@ -11,8 +11,11 @@ const Properties = () => {
 
 <div className="mt-10 md:mt-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 items-center">
 
-    {properties.map((property) => {
-        return <div key={property.id}>
+    {properties.map((property,index) => {
+        return <div key={property.id}
+        data-aos="fade-up"
+        data-aos-delay={`${index*150}`}
+        data-aos-anchor-placement="top-center">
             <PropertiesCard property={property}/>
         </div>
     })}
