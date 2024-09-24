@@ -127,7 +127,7 @@ const page = () => {
     </div>
     <div className="absolute bottom-0 start-0 end-0 p-2 sm:p-4">
       <div className="text-sm font-semibold text-gray-800 rounded-lg bg-white p-2 md:text-xl dark:bg-neutral-800 dark:text-neutral-200">
-       property Image
+       {property.owner}
       </div>
     </div>
   </Link>

@@ -1,39 +1,39 @@
 // 'use client'
 import Link from 'next/link';
 
-import { FaHouseDamage, FaUserCircle, FaBars} from "react-icons/fa";
+import { FaHouseDamage, FaUserCircle, FaBars } from "react-icons/fa";
 // import { useState,useEffect } from 'react';
 
 export const navlinks = [
     {
-        id:1,
-        url:"/",
-        label:"Home"
+        id: 1,
+        url: "/",
+        label: "Home"
     },
-   
+
     {
-        id:2,
-        url:"/property",
-        label:"Property"
-    },
-    {
-        id:3,
-        url:"/Blog",
-        label:"Blog"
+        id: 2,
+        url: "/property",
+        label: "Property"
     },
     {
-        id:4,
-        url:"/AddProperty",
-        label:"Add Property"
+        id: 3,
+        url: "/Blog",
+        label: "Blog"
     },
     {
-        id:2,
-        url:"/Listing",
-        label:"Team"
+        id: 4,
+        url: "/AddProperty",
+        label: "Add Property"
+    },
+    {
+        id: 2,
+        url: "/Listing",
+        label: "Team"
     },
 ]
 
-const Navbar = ({openNav}) => {
+const Navbar = ({ openNav }) => {
 
 
     // const [navBg,setNavbg] = useState(false)
@@ -47,59 +47,59 @@ const Navbar = ({openNav}) => {
 
     //     return () => {
     //     window.removeEventListener("scroll",handle)
-            
+
     //     }
     // },[])
 
-  return (
-    <div className={`fixed  h-[10vh] z-[100] w-full transition-all duration-200 bg-black bg-opacity-60`}>
+    return (
+        <div className={`fixed h-[10vh] z-[100] w-full transition-all duration-200 bg-black bg-opacity-60`}>
 
-        <div className='flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto'>
+            <div className='flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto'>
 
-{/* logo  */}
+                {/* logo  */}
 
-<div className="flex items-center space-x-2">
-    <div className="md:w-10 md:h-10 w-7 h-7 rounded-full bg-rose-700 text-white flex items-center justify-center flex-col">
-    <FaHouseDamage />
-   
-    </div>
+                <div className="flex items-center space-x-2">
+                    <div className="md:w-10 md:h-10 w-7 h-7 rounded-full bg-rose-700 text-white flex items-center justify-center flex-col">
+                        <FaHouseDamage />
 
-    <h1 className='text-white font-bold text-sm sm:text-base md:text-xl'>HomeHub</h1>
-</div>
+                    </div>
 
-{/* nav links  */}
+                    <h1 className='text-white font-bold text-sm sm:text-base md:text-xl'>HomeHub</h1>
+                </div>
 
-<div className='lg:flex items-center space-x-14 text-white hidden'>
-    {navlinks.map((navlink) => {
-        return ( <Link key={navlink.id} href={navlink.url}>
-            <p className='font-medium hover:text-yellow-300'>{navlink.label}</p>
-        </Link> )
-    })}
-</div>
+                {/* nav links  */}
+
+                <div className='lg:flex items-center space-x-14 text-white hidden'>
+                    {navlinks.map((navlink) => {
+                        return (<Link key={navlink.id} href={navlink.url}>
+                            <p className='font-medium hover:text-yellow-300'>{navlink.label}</p>
+                        </Link>)
+                    })}
+                </div>
 
 
-{/* login and burgermenu  */}
+                {/* login and burgermenu  */}
 
-<div className='flex items-center space-x-4'>
-    {/* login Button  */}
+                <div className='flex items-center space-x-4'>
+                    {/* login Button  */}
 
-    <div className='flex items-center cursor-pointer rounded-full text-white space-x-2 hover:text-yellow-500 transition-all duration-200'>
-        <FaUserCircle className='w-5 h-5'/>
-        <Link 
-        href="/signup" className='font-bold text-xs sm:text-base'>Login / Register</Link>
-    </div>
+                    <div className='flex items-center cursor-pointer rounded-full text-white space-x-2 hover:text-yellow-500 transition-all duration-200'>
+                        <FaUserCircle className='w-5 h-5' />
+                        <Link
+                            href="/signup" className='font-bold text-xs sm:text-base'>SignUp</Link>
+                    </div>
 
-    {/* burger menu  */}
+                    {/* burger menu  */}
 
-    <FaBars onClick={openNav}  className='sm:w-6 sm:h-6 w-4 h-4 lg:hidden cursor-pointer text-white hover:text-yellow-500' />
+                    <FaBars onClick={openNav} className='sm:w-6 sm:h-6 w-4 h-4 lg:hidden cursor-pointer text-white hover:text-yellow-500' />
 
-</div>
+                </div>
 
+
+            </div>
 
         </div>
-      
-    </div>
-  )
+    )
 }
 
 export default Navbar

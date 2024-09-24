@@ -16,7 +16,7 @@ const Home = () => {
     const initAos = async () => {
       await import("aos")
       AOS.init({
-        duration:1000,
+        duration:500,
         easing:"ease",
         once:true,
         anchorPlacement:"top-bottom"
